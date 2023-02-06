@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+</head>
+<body>
+    <div class="main-heading">
+        <h1 id="main-head1">Generate a</h1>
+        <h1 id="main-head2">random passoword</h1>
+    </div>
+    <h2 id="sec-head">Never use an insecure password again.</h2>
+    <button id="generate-btn" onclick="generatePasswords()">Generate passwords</button>
+    
+    <div class="modifications">
+        <label for="inputLength">Enter the desired password length:</label>
+        <input type="number" id="inputLength" value="15" min="5" max="20" step="1">
+
+        <label for="toggle">Nums & Symbols: </label>
+        <button id="toggle" onclick="toggle()">ON</button>
+    </div>
+
+    <hr>
+    <div class="passwords">
+        <button id="pass1" onclick="copy(this)"></button>
+        <button id="pass2" onclick="copy(this)"></button>
+        <span id="snackbar">Successfully Copied</span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
